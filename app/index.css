@@ -1,0 +1,102 @@
+:root {
+  --background-primary-color: #474b53;
+  --primary-text-color: #ffffff;
+  --background-second-color: cornflowerblue;
+  --button-color: #24292e;
+}
+
+body {
+  background-color: var(--background-primary-color);
+  font-family: 'Open Sans', sans-serif;
+  color: var(--primary-text-color);
+  margin: 0px;
+}
+
+.editor {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  height: calc(100vh - 140px);
+}
+
+.input-file {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  width: calc(100vw/1.2 - 30px);
+  height: calc(100vh/1.2 - 140px);
+  padding: 15px;
+  border: 12px dashed #6d737e;
+}
+
+.input-text {
+  font-size: larger;
+    font-weight: 200;
+}
+
+.input-file input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+}
+
+header {
+  height: 70px;
+  top: 0px;
+  position: absolute;
+  width: 100vw;
+  background-color: var(--background-second-color);
+}
+
+header p {
+  margin-top: 23px;
+  text-align: center;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom:0px;
+  height: 70px;
+  width: 100vw;
+  background-color: var(--background-second-color);
+}
+
+.save-button {
+  background-color: var(--button-color);
+  color: var(--primary-text-color);
+  font-size: 1.1em;
+  outline: none;
+  padding: 0px 20px 0px 20px;
+  font-weight: 300;
+  cursor: pointer;
+  border:none;
+}
+
+.save-button:disabled {
+  background-color: #24292e;
+  color: #6d737e;
+}
+
+.link {
+  padding: 25px;
+  background-color: var(--button-color);
+  text-decoration: none;
+  color: var(--primary-text-color);
+}
+
+textarea {
+  background-color: rgba(0,0,0,0);
+    font-size: 1.2em;
+    color: var(--primary-text-color);
+    border: 0;
+    outline: none;
+    height: 100%;
+    width: 100%;
+}
