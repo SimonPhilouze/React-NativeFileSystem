@@ -13,10 +13,15 @@ body {
 }
 
 .editor {
-  margin-top: 70px;
   display: flex;
   align-items: center;
-  height: calc(100vh - 140px);
+  flex-direction: row;
+  height: 100vh;
+  margin-right: 20px;
+}
+
+.contentArbo {
+  padding: 20px;
 }
 
 .input-file {
@@ -31,13 +36,36 @@ body {
   border: 12px dashed #6d737e;
 }
 
+.pathDirectory {
+  background-color: var(--button-color);
+  width: 24%;
+  height: 100vh;
+  overflow-y: auto;
+  padding-top: 10px;
+  margin-right: 20px;
+}
+
+.iconPath {
+  width: 15px;
+}
+
+.section {
+  margin-bottom: 5px;
+}
+
+.nameItemPatchDirectory {
+  top: -2px;
+  left: 6px;
+  position: relative;
+}
+
 .input-text {
   font-size: larger;
-    font-weight: 200;
+  position: absolute;
+  font-weight: 200;
 }
 
 .input-file input {
-  position: absolute;
   width: 100%;
   height: 100%;
   top: 0;
@@ -93,10 +121,10 @@ footer {
 
 textarea {
   background-color: rgba(0,0,0,0);
-    font-size: 1.2em;
-    color: var(--primary-text-color);
-    border: 0;
-    outline: none;
-    height: 100%;
-    width: 100%;
+  font-size: 1.2em;
+  color: var(--primary-text-color);
+  border: 0;
+  outline: none;
+  height: 100%;
+  width: 100%;
 }
